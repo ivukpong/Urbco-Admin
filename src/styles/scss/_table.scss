@@ -1,0 +1,159 @@
+.table-div {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+
+	.head {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 15px;
+		display: flex;
+		justify-content: space-between;
+
+		h5 {
+			margin: 0;
+			padding: 0;
+			font-size: 1rem;
+			text-transform: uppercase;
+			color: #000;
+		}
+	}
+	.filter {
+		padding: 15px 15px 0px 15px;
+
+		&.align {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		select {
+			margin-right: 20px;
+			background: #fff;
+			min-width: 150px;
+			outline: 0;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			height: 35px;
+			font-size: 0.9rem;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+
+		.date-filter {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-top: 10px;
+
+			span {
+				margin-right: 3px;
+				font-size: 0.8rem;
+				margin-bottom: 4px;
+			}
+
+			input {
+				margin-right: 15px;
+				background: #fff;
+				min-width: 150px;
+				outline: 0;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				height: 35px;
+				font-size: 0.9rem;
+				margin-bottom: 4px;
+			}
+			button {
+				background: none;
+				outline: 0;
+				border: 1px solid $brand-color;
+				font-size: 0.9rem;
+				color: $brand-color;
+				padding: 5px 15px;
+				border-radius: 2px;
+				margin-bottom: 4px;
+			}
+		}
+	}
+
+	.table-responsive {
+		padding: 15px;
+
+		p.no-r {
+			text-align: center;
+			margin-top: 50px;
+			font-size: 0.9rem;
+		}
+
+		.table {
+			font-size: 0.9rem;
+			color: #1f2937;
+			thead {
+				background: $brand-color;
+
+				th {
+					color: #fff;
+					font-weight: normal;
+				}
+			}
+			td.wide {
+				min-width: 250px;
+			}
+			span {
+				&.status {
+					text-transform: lowercase;
+					background: green;
+					color: #fff;
+					padding: 3px 10px;
+					border-radius: 3px;
+
+					&.PENDING {
+						background: orange;
+					}
+					&.FAILED {
+						background: red;
+					}
+				}
+			}
+			a {
+				color: $brand-color;
+				font-weight: 600;
+
+				&.action {
+					color: #fff;
+					background-color: $brand-color;
+					text-decoration: none;
+					font-weight: normal;
+					padding: 4px 10px;
+					font-size: 0.8rem;
+					border-radius: 2px;
+				}
+			}
+		}
+	}
+}
+
+.paginate {
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+	a {
+		background-color: #fff;
+		border: 1px solid #999;
+		color: #111;
+		padding: 7px 12px;
+		border-radius: 2px;
+		margin: 0.15rem;
+		font-weight: 600;
+		box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+		transition: all 0.4s ease-in-out;
+		text-decoration: none;
+		font-size: 0.9rem;
+
+		&:hover {
+			text-decoration: none;
+			box-shadow: 2px 7px 9px #999;
+		}
+		&.active {
+			background: $brand-color;
+			border: 1px solid $brand-color;
+			color: #fff;
+		}
+	}
+}

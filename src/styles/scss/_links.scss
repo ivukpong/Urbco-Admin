@@ -1,0 +1,28 @@
+.main-btn {
+	color: #fff;
+	background: $brand-color;
+	padding: 10px 30px;
+	border-radius: 4px;
+	border: 0;
+	outline: 0;
+	font-size: 0.9rem;
+	text-decoration: none;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&.sm {
+		padding: 6px 20px;
+	}
+}
+
+.nav-tabs {
+	a {
+		color: $brand-color !important;
+		font-weight: 500;
+		&.active {
+			color: #000 !important;
+		}
+	}
+}
