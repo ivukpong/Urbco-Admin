@@ -1,8 +1,8 @@
 const environment = "production";
 
 const config = {
-	testUrl: "https://urbco-api.onrender.com/api",
-	liveUrl: "https://api.urbco.ng/api",
+  testUrl: "https://urbco-api-production.up.railway.app/api",
+  liveUrl: "https://urbco-api-production.up.railway.app/api",
 };
 
 const frontUrl = "https://urbco.netlify.app";
