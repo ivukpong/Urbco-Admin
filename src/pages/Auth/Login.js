@@ -4,9 +4,11 @@ import { login, logout, verifyOtp } from "../../redux/auth/authSlice";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import Logo from "../../assets/logo-main.svg";
 import OTPInput from "react-otp-input";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 
 	const { loading, user_details } = useSelector((state) => state.auth);
 
@@ -19,8 +21,10 @@ const Login = () => {
 	useEffect(() => {
 		if (!user_details) {
 			dispatch(logout());
+		} else if (user_details.access_token) {
+			navigate("/dashboard");
 		}
-	}, [dispatch, user_details]);
+	}, [dispatch, user_details, navigate]);
 
 	const loginHandler = () => {
 		if (email && password) {
@@ -47,13 +51,13 @@ const Login = () => {
 			</div>
 			<div className="title">
 				<h3>Sign In</h3>
-				{user_details && user_details.email ? (
+				{user_details && user_details.email && !user_details.access_token ? (
 					<p>Please provide the OTP sent to your mail</p>
 				) : (
 					<p>Welcome Back! Please sign in to access your account.</p>
 				)}
 			</div>
-			{user_details && user_details.email ? (
+			{user_details && user_details.email && !user_details.access_token ? (
 				<div className="otp-form">
 					<OTPInput
 						value={otp}
