@@ -1,146 +1,146 @@
 .sidebar {
-	width: 270px;
-	height: 100vh;
-	position: fixed;
-	z-index: 1029;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	font-size: 0.9rem;
-	background-color: $brand-color;
-	overflow-y: auto;
+  width: 270px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1029;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.9rem;
+  background-color: $brand-color;
+  overflow-y: auto;
 
-	@media (max-width: 991px) {
-		margin-left: -270px;
-		height: 100% !important;
-		padding-bottom: 50px !important;
+  @media (max-width: 991px) {
+    margin-left: -270px;
+    height: 100% !important;
+    padding-bottom: 50px !important;
 
-		&.open-m {
-			margin-left: 0;
-		}
-	}
+    &.open-m {
+      margin-left: 0;
+    }
+  }
 
-	.logo {
-		height: 100px;
-		padding-top: 25px;
-		padding-left: 30px;
+  .logo {
+    height: 100px;
+    padding-top: 25px;
+    padding-left: 30px;
 
-		img {
-			height: 35px;
-		}
-		@media (max-width: 991px) {
-			display: none;
-		}
-	}
+    img {
+      height: 35px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
 
-	.menu {
-		@media (max-width: 991px) {
-			margin-top: 50px;
-		}
+  .menu {
+    @media (max-width: 991px) {
+      margin-top: 50px;
+    }
 
-		ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-			li {
-				margin-bottom: 15px;
+      li {
+        margin-bottom: 15px;
 
-				&.dropdown {
-					a {
-						span.icon {
-							margin-left: 30px;
-						}
-					}
-					ul {
-						margin-left: 50px;
-						li {
-							margin-bottom: 5px;
+        &.dropdown {
+          a {
+            span.icon {
+              margin-left: 30px;
+            }
+          }
+          ul {
+            margin-left: 50px;
+            li {
+              margin-bottom: 5px;
 
-							a {
-								padding: 10px 0;
-								text-transform: capitalize;
+              a {
+                padding: 10px 0;
+                text-transform: capitalize;
 
-								svg {
-									margin-right: 10px;
-								}
-							}
-						}
-					}
-				}
+                svg {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
 
-				a {
-					color: #fff;
-					text-decoration: none;
-					display: block;
-					width: 100%;
-					padding-left: 30px;
-					padding-top: 15px;
-					padding-bottom: 15px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          padding-left: 30px;
+          padding-top: 15px;
+          padding-bottom: 15px;
 
-					&:hover,
-					&.active {
-						background: rgba(255, 255, 255, 0.15);
-						border-left: 5px solid #ffffff;
-					}
+          &:hover,
+          &.active {
+            background: rgba(255, 255, 255, 0.15);
+            border-left: 5px solid #ffffff;
+          }
 
-					svg {
-						margin-right: 20px;
-					}
+          svg {
+            margin-right: 20px;
+          }
 
-					span {
-						text-transform: capitalize;
-					}
-				}
-			}
-		}
-	}
+          span {
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
 
-	.dropdown-toggle-btn {
-		background: none;
-		border: 0;
-		outline: 0;
-		color: #fff;
-		width: 100%;
-		text-align: left;
-		padding-left: 30px;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		text-transform: capitalize;
-		font-size: 0.9rem;
+  .dropdown-toggle-btn {
+    background: none;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
 
-		svg {
-			margin-right: 20px;
-		}
+    svg {
+      margin-right: 20px;
+    }
 
-		span {
-			text-transform: capitalize;
-		}
+    span {
+      text-transform: capitalize;
+    }
 
-		&:hover {
-			background: rgba(255, 255, 255, 0.15);
-			border-left: 5px solid #ffffff;
-		}
-	}
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-left: 5px solid #ffffff;
+    }
+  }
 
-	.logout-btn {
-		background: none;
-		border: 0;
-		outline: 0;
-		color: rgba(255, 255, 255, 0.7);
-		width: 100%;
-		text-align: left;
-		padding-left: 30px;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		font-size: 0.9rem;
+  .logout-btn {
+    background: none;
+    border: 0;
+    outline: 0;
+    color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 0.9rem;
 
-		svg {
-			margin-right: 20px;
-		}
+    svg {
+      margin-right: 20px;
+    }
 
-		&:hover {
-			color: #fff;
-			background: rgba(255, 255, 255, 0.15);
-		}
-	}
+    &:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
 }
