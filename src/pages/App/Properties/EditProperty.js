@@ -69,7 +69,7 @@ const EditProperty = () => {
         <div className="card">
           <div className="card-header d-flex align-items-center justify-content-between">
             <h6>Property Details</h6>
-            {propertyDetails._id && (
+            {propertyDetails.id && (
               <div className="d-flex align-items-center gap-2">
                 {propertyDetails.sent_to_buyops ? (
                   <span
@@ -102,7 +102,7 @@ const EditProperty = () => {
             </div>
           ) : (
             propertyDetails &&
-            propertyDetails._id && (
+            propertyDetails.id && (
               <PropertyForm propertyDetails={propertyDetails} />
             )
           )}

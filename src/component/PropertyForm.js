@@ -560,7 +560,7 @@ const PropertyForm = ({ propertyDetails }) => {
                       {types &&
                         types.map((ty) => (
                           <option key={ty.id} value={ty.id}>
-                            {ty.name}
+                            {ty.name.charAt(0).toUpperCase() + ty.name.slice(1)}
                           </option>
                         ))}
                     </select>

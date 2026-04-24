@@ -123,8 +123,8 @@ const Properties = () => {
           <option value={""}>Property Type</option>
           {types &&
             types.map((t) => (
-              <option key={t._id} value={t._id}>
-                {t.name}
+              <option key={t.id} value={t.id}>
+                {t.name.charAt(0).toUpperCase() + t.name.slice(1)}
               </option>
             ))}
         </select>
@@ -132,7 +132,7 @@ const Properties = () => {
           <option value={""}>Features</option>
           {features &&
             features.map((t) => (
-              <option key={t._id} value={t._id}>
+              <option key={t.id} value={t.id}>
                 {t.name}
               </option>
             ))}
@@ -188,7 +188,7 @@ const Properties = () => {
                 </thead>
                 <tbody>
                   {list.properties.map((property) => (
-                    <tr key={property._id}>
+                    <tr key={property.id}>
                       <td className="wide">{property.ref}</td>
                       <td className="wide">{property.name}</td>
                       <td>{property.investors_count}</td>
