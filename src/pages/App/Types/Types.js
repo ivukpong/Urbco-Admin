@@ -101,17 +101,17 @@ const Types = () => {
                               user_details.role_id.permissions.includes(
                                 "edit-types",
                               ))) && (
-                            <a
-                              href="#"
-                              onClick={(e) => {
-                                e.preventDefault();
+                            <button
+                              type="button"
+                              className="btn btn-link p-0"
+                              onClick={() => {
                                 setClickedType(feature);
 
                                 setOpenModal(true);
                               }}
                             >
                               Edit
-                            </a>
+                            </button>
                           )}
                         </td>
                       </tr>

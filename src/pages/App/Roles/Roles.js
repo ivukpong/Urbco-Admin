@@ -17,7 +17,7 @@ const Roles = () => {
   useEffect(() => {
     dispatch(listRoles({ token: user_details.access_token }));
     dispatch(listPermissions({ token: user_details.access_token }));
-  }, [reset]);
+  }, [reset, dispatch, user_details.access_token]);
 
   return (
     <div className="table-div mt-5">
@@ -59,17 +59,17 @@ const Roles = () => {
                           user_details.role_id.permissions.includes(
                             "edit-role",
                           ))) && (
-                        <a
-                          href="#"
-                          onClick={(e) => {
-                            e.preventDefault();
+                        <button
+                          type="button"
+                          className="btn btn-link p-0"
+                          onClick={() => {
                             setClickedRole(rol);
 
                             setOpenModal(true);
                           }}
                         >
                           Edit
-                        </a>
+                        </button>
                       )}
                     </td>
                   </tr>
